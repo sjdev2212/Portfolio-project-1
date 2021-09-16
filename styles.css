@@ -1,15 +1,14 @@
 html {
   box-sizing: border-box;
-  max-width: fit-content;
   padding: 0;
 }
 .menu {
   display: flex;
-
   height: 72px;
   padding: 0 24px;
   justify-content: space-between;
 }
+
 .icon {
   color: #acb7c3;
   width: 45px;
@@ -17,15 +16,18 @@ html {
 .p {
   border: 2px solid #acb7c3;
 }
+
 body {
   background: #191765 url(/assets/images/Ellipse\ 18.svg) 0% 0% no-repeat;
 }
+
 .content {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-content: center;
 }
+
 .nav-div {
   margin-bottom: 10rem;
   margin-top: 1rem;
@@ -33,6 +35,7 @@ body {
   font-size: 19px;
   font-family: "Roboto", sans-serif;
 }
+
 h1 {
   color: #7d73fc;
   font-size: 48px;
@@ -41,6 +44,7 @@ h1 {
   margin-bottom: 1rem;
   font-family: "Roboto", sans-serif;
 }
+
 h2 {
   color: #edecff;
   margin-bottom: 2rem;
@@ -48,6 +52,7 @@ h2 {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
+
 p {
   color: #c8c8d4;
   font-size: 20px;
