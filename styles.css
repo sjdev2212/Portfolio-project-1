@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   padding: 0;
  
+ 
   
 }
 
@@ -22,9 +23,10 @@ html {
 }
 
 body {
-  background: #191765 ;
-  background-image: url(/assets/images/Ellipse\ 18.svg) no-repeat;;
-  background-image: url(/assets/images/Ellipse\ 19.svg) no-repeat;
+ 
+  background:#191765 url(/assets/images/Ellipse\ 18.svg) 0% 10% no-repeat;
+  margin: 0 ;
+  padding: 0;
 }
 
 .content {
@@ -107,4 +109,27 @@ li:hover {
 }
 a {
   text-decoration: none;
+}
+.list {
+  background: #191765 url(/assets/images/Ellipse\ 19.svg)100% 20% no-repeat;
+}
+
+footer ul {
+  display: flex;
+ 
+}
+footer a {
+  padding: 0 10px;
+}
+footer div { 
+  display: flex;
+  margin-left: 6rem;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+footer div:hover {
+  text-decoration: underline;
+}
+.text-w  a {
+  color:honeydew
 }
