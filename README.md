@@ -5,7 +5,7 @@
 
 Created my first portfolio project
 
-![screenshot](./app_screenshot.png)
+![screenshot](./assets/images/screenshot.png)
 
 Html Webpage with a title 
 
