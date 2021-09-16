@@ -1,0 +1,70 @@
+html{
+    box-sizing: border-box;
+    max-width: fit-content;
+    padding: 0;
+}
+.menu {
+    
+    display:flex;
+    
+
+    height: 72px;
+    padding: 0 24px;
+    
+    justify-content:space-between;
+  
+    
+}
+.icon{
+    color: #acb7c3;
+    width : 45px;
+
+}
+.p{
+    border: 2px solid #ACB7C3;
+}
+body {
+    background: #191765 url(/assets/images/Ellipse\ 18.svg) 2% 2% no-repeat;
+}
+.content {
+    display: flex;
+   flex-direction: column;
+    text-align: center;
+    align-content: center;
+   
+}
+.nav-div{
+    margin-bottom: 10rem;
+    margin-top: 1rem;
+    color: #EDECFF;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    color: #7D73FC;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    color :#EDECFF;
+    margin-bottom: 4rem;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+p {
+    color: #C8C8D4;
+    font-size: 20px;
+    font-weight: 400;
+   
+   
+    display: flex;
+    align-content: center
+    ;
+    font-family: 'Roboto', sans-serif;
+}
