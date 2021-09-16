@@ -22,22 +22,9 @@ Html Webpage with a title
 
 ## Getting Started
 
+Download repository 
+Open index.html in a web browser
 
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
 
 
 
