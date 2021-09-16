@@ -59,7 +59,10 @@ h2 {
   margin-bottom: 2rem;
   font-size: 32px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  padding: 28px 0;
+  text-align: center;
+ border-bottom: 1px solid gray;
+  margin: 0 10px;
 }
 
 .first-text {
@@ -99,6 +102,11 @@ a {
 footer a {
   padding: 0 10px;
 }
+
+footer ul {
+  display: flex;
+}
+
 .logo-cloud ul {
   padding: 0;
   width: 100%;
@@ -118,13 +126,10 @@ li:hover {
   text-decoration: underline;
 }
 
-footer ul {
-  display: flex;
-}
+
 
 footer div {
   display: flex;
-
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
 }
@@ -146,13 +151,6 @@ footer div:hover {
   background: #191765 url(/assets/images/imagen-blanca.png) 30% 30% no-repeat;
 }
 
-h2 {
-  padding: 28px 0;
-  text-align: center;
-  color: #9490ff;
-  border-bottom: 1px solid gray;
-  margin: 0 10px;
-}
 
 h3 {
   font-size: 32px;
@@ -171,6 +169,7 @@ p {
   color: #dcdce8;
   margin: 24px;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -188,6 +187,7 @@ p {
   border-right: 2px solid grey;
   border-left: 2px solid grey;
 }
+
 .border2 {
   border-right: 2px solid grey;
 }
@@ -198,4 +198,10 @@ p {
   color: #edecff;
   padding: 12px;
   margin-left: 24px;
+}
+.btn:hover {
+  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+}
+.btn:active {
+  background: #5E42D7;
 }
