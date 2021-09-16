@@ -99,6 +99,12 @@ a {
 footer a {
   padding: 0 10px;
 }
+.logo-cloud ul {
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  margin-top: 35px;
+}
 
 .list a {
   color: #f5f5ff;
@@ -118,7 +124,7 @@ footer ul {
 
 footer div {
   display: flex;
-  margin-left: 6rem;
+
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
 }
@@ -129,6 +135,7 @@ footer div:hover {
 
 .text-w a {
   color: honeydew;
+  margin: 0 auto;
 }
 
 .work-sect {
@@ -136,19 +143,20 @@ footer div:hover {
   flex-direction: column;
   align-items: center;
   margin-top: 28px;
+  background: #191765 url(/assets/images/imagen-blanca.png) 30% 30% no-repeat;
 }
 
 h2 {
-  padding: 28px  0;
+  padding: 28px 0;
   text-align: center;
-  color : #9490ff;
+  color: #9490ff;
   border-bottom: 1px solid gray;
   margin: 0 10px;
 }
 
 h3 {
   font-size: 32px;
-  padding: 28px  0;
+  padding: 28px 0;
   text-align: center;
   color: white;
 }
@@ -160,36 +168,34 @@ h3 {
 
 p {
   line-height: 28px;
-  color: #DCDCE8;
+  color: #dcdce8;
+  margin: 24px;
 }
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4,auto);
+  grid-template-columns: repeat(4, auto);
   width: 100%;
   align-items: center;
-  
-
+  padding: 0 24px;
 }
 
 .grid-container li {
-  padding: 6px 16px  ;
-  color:whitesmoke;
-  
-
+  padding: 6px 16px;
+  color: whitesmoke;
 }
 
 .border1 {
   border-right: 2px solid grey;
   border-left: 2px solid grey;
-  
-
 }
 .border2 {
   border-right: 2px solid grey;
 }
 
 .btn {
-  align-items: flex-start;
+  align-self: flex-start;
+  background-color: #7d73fc;
+  color: #edecff;
+  padding: 12px;
+  margin-left: 24px;
 }
-
-
