@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .menu {
@@ -61,7 +62,7 @@ h2 {
   font-family: "Roboto", sans-serif;
 }
 
-p {
+.first-text {
   color: #c8c8d4;
   font-size: 20px;
   font-weight: 400;
@@ -87,7 +88,6 @@ p {
 .list {
   display: flex;
   flex-wrap: wrap;
-  font-family: "Roboto", sans-serif;
   border-bottom: 1px solid gray;
   background: #191765 url(/assets/images/Ellipse\ 19.svg) 100% 20% no-repeat;
 }
@@ -130,3 +130,66 @@ footer div:hover {
 .text-w a {
   color: honeydew;
 }
+
+.work-sect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 28px;
+}
+
+h2 {
+  padding: 28px  0;
+  text-align: center;
+  color : #9490ff;
+  border-bottom: 1px solid gray;
+  margin: 0 10px;
+}
+
+h3 {
+  font-size: 32px;
+  padding: 28px  0;
+  text-align: center;
+  color: white;
+}
+
+.card-image {
+  height: 236px;
+  width: 327px;
+}
+
+p {
+  line-height: 28px;
+  color: #DCDCE8;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  width: 100%;
+  align-items: center;
+  
+
+}
+
+.grid-container li {
+  padding: 6px 16px  ;
+  color:whitesmoke;
+  
+
+}
+
+.border1 {
+  border-right: 2px solid grey;
+  border-left: 2px solid grey;
+  
+
+}
+.border2 {
+  border-right: 2px solid grey;
+}
+
+.btn {
+  align-items: flex-start;
+}
+
+
