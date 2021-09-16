@@ -89,6 +89,15 @@ p {
   flex-wrap: wrap;
   font-family: "Roboto", sans-serif;
   border-bottom: 1px solid gray;
+  background: #191765 url(/assets/images/Ellipse\ 19.svg) 100% 20% no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer a {
+  padding: 0 10px;
 }
 
 .list a {
@@ -103,20 +112,8 @@ li:hover {
   text-decoration: underline;
 }
 
-a {
-  text-decoration: none;
-}
-
-.list {
-  background: #191765 url(/assets/images/Ellipse\ 19.svg) 100% 20% no-repeat;
-}
-
 footer ul {
   display: flex;
-}
-
-footer a {
-  padding: 0 10px;
 }
 
 footer div {
