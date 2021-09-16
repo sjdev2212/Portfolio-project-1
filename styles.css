@@ -1,6 +1,8 @@
 html {
   box-sizing: border-box;
   padding: 0;
+ 
+  
 }
 
 .menu {
@@ -20,7 +22,9 @@ html {
 }
 
 body {
-  background: #191765 url(/assets/images/Ellipse\ 18.svg) 0% 0% no-repeat;
+  background: #191765 ;
+  background-image: url(/assets/images/Ellipse\ 18.svg) no-repeat;;
+  background-image: url(/assets/images/Ellipse\ 19.svg) no-repeat;
 }
 
 .content {
@@ -38,7 +42,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-
+ul {
+  list-style: none;
+}
 
 h1 {
   color: #7d73fc;
@@ -67,4 +73,38 @@ p {
   padding: 28px 12px;
   border-bottom: 1px solid gray;
   margin: 0 8px;
+}
+ .list .a-title {
+  color:#9490FF;
+
+}
+
+.list-head  {
+  
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1.2rem;
+  
+  }
+  
+.list  {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid gray;
+ 
+  }
+  .list a {
+    color: #F5F5FF;
+  }
+  li {
+margin-bottom: 1.3rem;
+  }
+
+li:hover {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
 }
