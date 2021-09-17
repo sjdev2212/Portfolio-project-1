@@ -16,10 +16,6 @@ html {
   width: 45px;
 }
 
-.p {
-  border: 2px solid #acb7c3;
-}
-
 body {
   background: #191765 url(/assets/images/Ellipse\ 18.svg) 0% 10% no-repeat;
   margin: 0;
@@ -89,8 +85,8 @@ h2 {
 }
 
 .list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid gray;
   background: #191765 url(/assets/images/Ellipse\ 19.svg) 100% 20% no-repeat;
 }
@@ -144,15 +140,15 @@ footer div:hover {
 .work-sect {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 28px;
   background: #191765 url(/assets/images/imagen-blanca.png) 30% 30% no-repeat;
+  padding: 0 10px;
 }
 
 h3 {
   font-size: 32px;
   padding: 28px 0;
-  text-align: center;
   color: white;
 }
 
@@ -164,20 +160,22 @@ h3 {
 p {
   line-height: 28px;
   color: #dcdce8;
-  margin: 24px;
+  margin: 24px 0;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  width: 100%;
   align-items: center;
-  padding: 0 24px;
+  justify-items: start;
+  margin: 0;
+  padding: 0;
 }
 
 .grid-container li {
   padding: 6px 16px;
   color: whitesmoke;
+  font-size: 16px;
 }
 
 .border1 {
@@ -194,7 +192,6 @@ p {
   background-color: #7d73fc;
   color: #edecff;
   padding: 12px;
-  margin-left: 24px;
 }
 
 .btn:hover {
