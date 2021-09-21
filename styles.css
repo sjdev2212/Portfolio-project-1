@@ -201,3 +201,21 @@ p {
 .btn:active {
   background: #5e42d7;
 }
+
+h3 {
+  color: #9390FF;
+  font-weight: 500;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.bottom-p {
+  color: #F5F5FF;
+  font-weight: 400;
+  font-size: 16;
+  line-height: 24px;
+ 
+
+}
