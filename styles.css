@@ -219,3 +219,31 @@ h3 {
  
 
 }
+
+.form-text {
+  color:  #81818C;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 15px 16px;
+
+}
+
+.form-email {
+  color: #191765;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 15px 16px;
+
+}
+
+.form-email::placeholder {
+  color:#191765 ;
+}
+
+.text-area-color {
+  color :#81818C;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 12px;
+
+}
