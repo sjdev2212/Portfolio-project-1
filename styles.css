@@ -202,6 +202,10 @@ p {
   background: #5e42d7;
 }
 
+.contact-section {
+  justify-content: center;
+}
+
 h3 {
   color: #9390FF;
   font-weight: 500;
@@ -231,7 +235,7 @@ h3 {
   font-size: 15px;
   line-height: 24px;
   padding: 15px 16px;
-  max-width: 327px;
+  min-width: 327px;
   margin-top: 40px;
 }
 
@@ -240,7 +244,7 @@ h3 {
   font-size: 15px;
   line-height: 24px;
   padding: 15px 16px;
-  max-width: 327px;
+  min-width: 327px;
   margin-top: 24px;
 }
 
@@ -260,6 +264,6 @@ h3 {
   font-size: 15px;
   line-height: 24px;
   padding: 12px;
-  max-width: 327px;
+  min-width: 327px;
   margin-top: 24px;
 }
