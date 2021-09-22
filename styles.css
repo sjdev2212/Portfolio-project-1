@@ -298,3 +298,11 @@ h5 {
   color: #ebebff;
   font-size: 28px;
 }
+
+.form-btn:hover {
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.form-btn:active {
+  background: #5e42d7;
+}
