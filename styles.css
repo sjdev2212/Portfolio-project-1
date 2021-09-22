@@ -114,6 +114,10 @@ footer ul {
   color: #f5f5ff;
 }
 
+.linked {
+  width: 21px;
+}
+
 li {
   margin-bottom: 1.3rem;
 }
@@ -192,6 +196,10 @@ p {
   background-color: #7d73fc;
   color: #edecff;
   padding: 12px;
+  height: 68px;
+  width: 120px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -199,5 +207,102 @@ p {
 }
 
 .btn:active {
+  background: #5e42d7;
+}
+
+.contact-section {
+  justify-content: center;
+  border-bottom: 2px solid #3a3837;
+}
+
+h4 {
+  color: #9390ff;
+  font-weight: 500;
+  font-size: 38px;
+  display: flex;
+  justify-content: center;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.contact-text {
+  color: #f5f5ff;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 24px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-text {
+  color: #81818c;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 15px 16px;
+  width: 327px;
+  margin-top: 40px;
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 48px;
+}
+
+.form-email {
+  color: #191765;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 15px 16px;
+  width: 327px;
+  margin-top: 24px;
+  height: 48px;
+}
+
+.form-email::placeholder {
+  color: #191765;
+}
+
+.form-btn {
+  background-color: #7d73fc;
+  color: #edecff;
+  padding: 12px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  height: 68px;
+  width: 120px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.text-area-color {
+  color: #81818c;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 12px;
+  width: 327px;
+  margin-top: 24px;
+  height: 148px;
+}
+
+.final {
+  display: flex;
+  justify-content: center;
+  margin-top: -47px;
+  color: #ebebff;
+  font-size: 28px;
+}
+
+.form-btn:hover {
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.form-btn:active {
   background: #5e42d7;
 }
