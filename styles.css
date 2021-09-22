@@ -10,6 +10,14 @@ html {
   padding: 0 24px;
   justify-content: space-between;
 }
+.nav-div {
+  margin-bottom: 10rem;
+  margin-top: 1.5rem;
+  color: #edecff;
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
+}
+
 
 .icon {
   color: #acb7c3;
@@ -28,14 +36,72 @@ body {
   text-align: center;
   align-content: center;
 }
-
-.nav-div {
-  margin-bottom: 10rem;
-  margin-top: 1.5rem;
-  color: #edecff;
-  font-size: 19px;
-  font-family: "Roboto", sans-serif;
+.envelope-icon {
+  width:24px;
+  height: 25px;
+  margin-top: 30px;
+  padding-right: 25px;
 }
+/*nav mediaquery Mobile */
+@media screen  and (max-width: 500px){
+ 
+ 
+  .desk {
+    display: none;
+  }
+  .envelope-icon {
+    display: none;
+  }
+  .left {
+    justify-self: flex-start;
+  }
+ 
+  
+}
+/* desktop */
+@media screen  and (min-width: 500px){
+  .left {
+    
+    margin-bottom: 10rem;
+   
+   color: #edecff;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin-left: 75px;
+    margin-top: 25px;
+  }
+  .menu {
+    display: flex;
+    height: 72px;
+    padding: 0 24px;
+    
+  }
+
+  
+  .icon {
+    display: none;
+  }
+  .nav-div {
+    margin-bottom: 10rem;
+    margin-top: 1.5rem;
+   color: #edecff;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+   margin-right: -600px;
+   margin-top: 25px;
+
+    
+    
+  }
+  .envelope-icon {
+    margin-right: 75px;
+    width: 30px;
+    margin-top: 25px;
+  }
+  
+}
+
+
 
 ul {
   list-style: none;
