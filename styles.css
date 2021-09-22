@@ -17,6 +17,13 @@ html {
   font-size: 19px;
   font-family: "Roboto", sans-serif;
 }
+.left {
+  margin-bottom: 10rem;
+  margin-top: 1.5rem;
+  color: #edecff;
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
+}
 
 
 .icon {
@@ -55,6 +62,16 @@ body {
   .left {
     justify-self: flex-start;
   }
+  .first-text {
+    color: #c8c8d4;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-content: center;
+    padding: 28px 12px;
+    border-bottom: 1px solid gray;
+    margin: 0 8px;
+  }
  
   
 }
@@ -77,8 +94,7 @@ body {
     
   }
 
-  
-  .icon {
+.icon {
     display: none;
   }
   .nav-div {
@@ -89,18 +105,45 @@ body {
     font-family: "Roboto", sans-serif;
    margin-right: -600px;
    margin-top: 25px;
-
-    
-    
-  }
+ }
   .envelope-icon {
     margin-right: 75px;
     width: 30px;
     margin-top: 25px;
+  } 
+   main h1 {
+    padding-top: 120px;
+    font-size: 68px;
+    font-weight: 700;
+    margin-bottom: -20px;
+    
   }
+  main h2 {
+    font-size: 36px;
+    border-bottom: none;
+    margin-bottom: 100px;
+  }
+  main p {
+    color: #c8c8d4;
+    font-size: 20px;
+    font-weight: 400;
+    
+    padding-left: 496px;
+    padding-right: 496px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid gray;
+    line-height: 32px;
+    text-align: center;
   
+  }
+
+
+  
+
+ 
 }
 
+/*-----------------------------*/
 
 
 ul {
@@ -127,17 +170,7 @@ h2 {
   border-bottom: 1px solid gray;
 }
 
-.first-text {
-  color: #c8c8d4;
-  font-size: 20px;
-  font-weight: 400;
-  display: flex;
-  align-content: center;
-  font-family: "Roboto", sans-serif;
-  padding: 28px 12px;
-  border-bottom: 1px solid gray;
-  margin: 0 8px;
-}
+
 
 .list .a-title {
   color: #9490ff;
