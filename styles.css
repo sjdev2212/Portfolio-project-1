@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  background-color: #191765 ;
 }
 
 .menu {
@@ -31,11 +32,7 @@ html {
   width: 45px;
 }
 
-body {
-  background: #191765 url(/assets/images/Ellipse\ 18.svg) 0% 10% no-repeat;
-  margin: 0;
-  padding: 0;
-}
+
 
 .content {
   display: flex;
@@ -51,7 +48,11 @@ body {
 }
 /*nav mediaquery Mobile */
 @media screen  and (max-width: 500px){
- 
+  body {
+    background: #191765 url(/assets/images/Ellipse\ 18.svg) 0% 10% no-repeat;
+    margin: 0;
+    padding: 0;
+  }
  
   .desk {
     display: none;
@@ -71,6 +72,28 @@ body {
     padding: 28px 12px;
     border-bottom: 1px solid gray;
     margin: 0 8px;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid gray;
+    background: #191765 url(assets/images/Ellipse\ 19.svg) 100% 20% no-repeat;
+  }
+  
+  
+  .work-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 28px;
+    background: #191765 url(/assets/images/imagen-blanca.png) 30% 30% no-repeat;
+    padding: 0 10px;
+  }
+  .circle-left {
+    display: none;
+  }
+  .circle-right {
+display: none;
   }
  
   
@@ -122,6 +145,8 @@ body {
     font-size: 36px;
     border-bottom: none;
     margin-bottom: 100px;
+    margin-right: 200px;
+   
   }
   main p {
     color: #c8c8d4;
@@ -169,6 +194,21 @@ h2 {
   text-align: center;
   border-bottom: 1px solid gray;
 }
+.circle-left {
+  width: 184px;
+  float: left;
+margin-left:-5px;
+margin-bottom: 300px;
+position: static;
+}
+.circle-right {
+  width: 220px;
+  float: right;
+  margin-top: 130px;
+  position: static;
+
+}
+
 
 
 
@@ -179,16 +219,9 @@ h2 {
 .list-head {
   font-size: 14px;
   line-height: 24px;
-  font-family: "Roboto", sans-serif;
   margin-bottom: 1.2rem;
 }
 
-.list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-bottom: 1px solid gray;
-  background: #191765 url(/assets/images/Ellipse\ 19.svg) 100% 20% no-repeat;
-}
 
 a {
   text-decoration: none;
@@ -240,14 +273,7 @@ footer div:hover {
   margin: 0 auto;
 }
 
-.work-sect {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 28px;
-  background: #191765 url(/assets/images/imagen-blanca.png) 30% 30% no-repeat;
-  padding: 0 10px;
-}
+
 
 h3 {
   font-size: 32px;
