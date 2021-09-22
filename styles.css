@@ -95,6 +95,12 @@ html {
   .circle-right {
 display: none;
   }
+  .logo-cloud ul {
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    margin-top: 35px;
+  }
  
   
 }
@@ -156,12 +162,26 @@ display: none;
     padding-left: 496px;
     padding-right: 496px;
     padding-bottom: 50px;
-    border-bottom: 1px solid gray;
+    
+    
     line-height: 32px;
     text-align: center;
   
   }
 
+  .list {
+    display: flex;
+  justify-content: center;
+  border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-bottom:-5px;
+    margin-top: -170px;
+    margin-left: 470px;
+    margin-right :450px;
+    
+    
+    
+  }
 
   
 
@@ -202,9 +222,9 @@ margin-bottom: 300px;
 position: static;
 }
 .circle-right {
-  width: 220px;
+  width: 280px;
   float: right;
-  margin-top: 130px;
+  margin-top: 110px;
   position: static;
 
 }
@@ -235,12 +255,7 @@ footer ul {
   display: flex;
 }
 
-.logo-cloud ul {
-  padding: 0;
-  width: 100%;
-  justify-content: center;
-  margin-top: 35px;
-}
+
 
 .list a {
   color: #f5f5ff;
@@ -271,6 +286,15 @@ footer div:hover {
 .text-w a {
   color: honeydew;
   margin: 0 auto;
+}
+.text-w2 a{
+  color: honeydew;
+  margin: 0 auto;
+}
+.footer-desktop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
 }
 
 
