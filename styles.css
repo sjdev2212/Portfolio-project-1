@@ -200,6 +200,9 @@ p {
   width: 120px;
   font-size: 15px;
   font-weight: bold;
+  transition: box-shadow 1s ;
+  transition: background-color 0.5s;
+  
 }
 
 .btn:hover {
