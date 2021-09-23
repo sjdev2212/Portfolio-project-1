@@ -202,7 +202,7 @@ p {
   font-weight: bold;
   transition: box-shadow 1s ;
   transition: background-color 0.5s;
-  
+
 }
 
 .btn:hover {
@@ -308,4 +308,12 @@ h5 {
 
 .form-btn:active {
   background: #5e42d7;
+}
+
+.skills-link {
+  transition: color 0.5s;
+}
+
+.skills-link:hover {
+  color: yellow;
 }
