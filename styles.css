@@ -47,7 +47,7 @@ html {
   padding-right: 25px;
 }
 /*nav mediaquery Mobile */
-@media screen  and (max-width: 500px){
+@media screen  and (max-width: 900px){
   body {
     background: #191765 url(/assets/images/Ellipse\ 18.svg) 0% 10% no-repeat;
     margin: 0;
@@ -102,6 +102,9 @@ display: none;
     margin-top: 35px;
   }
   .text-w2 {
+    display: none;
+  }
+  .big-version {
     display: none;
   }
  
@@ -161,28 +164,23 @@ display: none;
     color: #c8c8d4;
     font-size: 20px;
     font-weight: 400;
-    position: static;
-    
-    padding-left: 496px;
-    padding-right: 496px;
-    padding-bottom: 50px;
-    
-    
+    margin-bottom:200px ;
     line-height: 32px;
     text-align: center;
-  
+    margin-left: 330px;
+  margin-right: 330px
   }
 
   .list {
     display: flex;
-  justify-content: center;
-  border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    margin-bottom:-5px;
-    margin-top: -170px;
-    margin-left: 470px;
-    margin-right :450px;
     
+    
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    justify-content: center;
+    margin: 0 380px
+ 
     
     
   }
@@ -206,14 +204,17 @@ display: none;
     }
   .card-1 {
     grid-column-start: auto;
+    }
     
-    
-  }
+    .card-1 img {
+     
+    }
+
   .card-2 {
     grid-column-end: auto;
     margin-right: 130px;
-    margin-bottom: 100px;
-    margin-top: -75px;
+     height: 300px; 
+    margin-bottom: 10rem;
   }
   .card-3 {
     grid-column-end: auto;
@@ -222,14 +223,16 @@ display: none;
   }
   .card-4 {
     grid-column-start: auto;
-  
-  padding-left: 120px;
+    padding-left: 120px;
+    margin-top: -70px;
   }
   .work-desk img  {
     width: 500px;
     height: 350px;
+    background: #191765 url(assets/images/desktop-left.png) 0% 0% no-repeat;
     margin-left: 130px;
     margin-top: 50px
+   
     
   }
   .work-right img {
@@ -239,9 +242,45 @@ display: none;
     margin-top:50px;
     
   }
-
- 
   
+  .title-desk {
+    display: flex;
+    justify-self: start;
+    margin-left: 130px;
+    font-size: 55px;
+    color: #9390FF;
+    font-weight: bolder;
+    
+    
+  }
+  .contact-text {
+    padding : 0 278px
+  }
+ 
+  .contact-section .form-text {
+    width: 560px;
+  }
+  .contact-section .form-email {
+    width: 560px;
+  }
+  .contact-section .text-area-color {
+    width: 560px;
+  }
+  .contact-section .form-btn {
+    margin-bottom: 400px;
+    margin-top: 200px;
+    width: 160px;
+  }
+ .logo-cloud {
+   display: flex;
+   justify-content: center;
+ }
+ .logo-cloud .final {
+  padding-top: 60px;
+ }
+  .small-version {
+    display: none;
+  }
 
  
 }
