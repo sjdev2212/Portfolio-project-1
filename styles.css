@@ -48,6 +48,7 @@ html {
 }
 
 /* nav mediaquery Mobile */
+
 @media screen and (max-width: 900px) {
   body {
     background: #191765 url(/assets/images/Ellipse\ 18.svg) 0% 10% no-repeat;
@@ -119,6 +120,7 @@ html {
 }
 
 /* desktop */
+
 @media screen and (min-width: 500px) {
   .left {
     margin-bottom: 10rem;
@@ -557,4 +559,4 @@ h5 {
 
 .form-btn:active {
   background: #5e42d7;
-}
+};
