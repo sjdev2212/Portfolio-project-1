@@ -51,7 +51,7 @@ html {
 
 @media screen and (max-width: 900px) {
   body {
-    background: #191765 url(/assets/images/Ellipse\ 18.svg) 0% 10% no-repeat;
+    background: #191765 url(assets/images/Ellipse\ 18.svg) 0% 10% no-repeat;
     margin: 0;
     padding: 0;
   }
@@ -91,7 +91,7 @@ html {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 28px;
-    background: #191765 url(/assets/images/imagen-blanca.png) 30% 30% no-repeat;
+    background: #191765 url(assets/images/imagen-blanca.png) 30% 30% no-repeat;
     padding: 0 10px;
   }
 
@@ -120,8 +120,89 @@ html {
 }
 
 /* desktop */
+@media screen and (min-width: 901px)and (max-width: 1150px){
+ .desk {
+  display: flex;
+  align-items: flex-end;
+ 
+ }
+ .icon{
+   display: none;
+ }
+ .list {
+  display: flex;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  align-items: center;
+  justify-content: center;
+  margin: 0 380px;
+}
+.logo-cloud {
+  display: flex;
+  justify-content: center;
+}
 
-@media screen and (min-width: 500px) {
+.logo-cloud .final {
+  padding-top: 60px;
+}
+
+.small-version {
+  display: none;
+}
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  height: 72px;
+  padding: 0 24px;
+}
+.footer-desktop {
+  margin-block: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.work-desk {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-image: url(assets/images/desktop-left.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 20%;
+}
+
+main p {
+  color: #c8c8d4;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 200px;
+  line-height: 32px;
+  text-align: center;
+  margin-left: 330px;
+  margin-right: 330px;
+}
+main h1 {
+  padding-top: 120px;
+  font-size: 68px;
+  font-weight: 700;
+  margin-bottom: -20px;
+}
+
+main h2 {
+  font-size: 36px;
+  border-bottom: none;
+  margin-bottom: 100px;
+  margin-right: 200px;
+}
+
+
+
+
+
+}
+
+@media screen and (min-width: 1150px) {
   .left {
     margin-bottom: 10rem;
     color: #edecff;
@@ -148,7 +229,10 @@ html {
     font-family: "Roboto", sans-serif;
     margin-right: -600px;
     margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
   }
+ 
 
   .envelope-icon {
     margin-right: 75px;
