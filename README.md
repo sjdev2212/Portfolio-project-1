@@ -5,7 +5,7 @@
 
 Created my first portfolio project
 
-![screenshot](./assets/images/screenshot.png)
+![screenshot](./assets/images/preview.png)
 
 Html Webpage with a title 
 
@@ -17,7 +17,7 @@ Html Webpage with a title
 
 ## Live Demo
 
-[Live Demo Link](http://127.0.0.1:5500/index.html)
+[Live Demo Link](https://sj1978.github.io/Portfolio-project-1/)
 
 
 ## Getting Started
@@ -32,7 +32,7 @@ Open index.html in a web browser
 
 👤 **Anibal Amoroso**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@githubhandle](https://github.com/sj1978)
 
 
 
