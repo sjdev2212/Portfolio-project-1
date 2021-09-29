@@ -25,10 +25,10 @@
   <body>
     <header>
       <nav class="menu">
-        <div class="left">Jhon Doe</div>
-        <div class="nav-div desk">Portfolio</div>
-        <div class="nav-div desk">About</div>
-        <div class="nav-div desk">Contact</div>
+        <div class="left">Anibal Amoroso</div>
+        <div class="nav-div desk"><a href="#link-1">Works</a></div>
+        <div class="nav-div desk"><a href="#link-2">Skills</a></div>
+        <div class="nav-div desk"><a href="#link-3">Contact us</a></div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon"
@@ -41,8 +41,11 @@
             stroke-width="2"
             d="M4 6h16M4 12h16M4 18h16" />
           </svg>
-          <img class="envelope-icon desk" src="assets/images/sobre.png"
-            alt="icon-envelope">
+            <a href="#link-4">
+            <img class="envelope-icon desk" src="assets/images/sobre.png"
+            alt="icon-envelope"></a>
+          
+          
         </nav>
       </header>
       <main class="content">
@@ -67,7 +70,7 @@
         <ul>
           <li class="list-head">
             <a class="a-title" href="#">
-              <h5>Language</h5>
+              <h5 id="link-2">Language</h5>
             </a>
           </li>
           <li><a class="skills-link" href="#">Javascript</a></li>
@@ -264,7 +267,7 @@
 
 
         <section class="big-version">
-          <h2 class="title-desk">My recent work</h2>
+          <h2 class="title-desk" id="link-1">My recent work</h2>
           <section class="work-sect work-desk">
 
             <div class="card-1">
@@ -392,7 +395,7 @@
         </section>
         <section class="contact-section">
           <h4>Let's chat!</h4>
-          <p class="contact-text">
+          <p class="contact-text" id="link-3">
             If you have an application you are interested in developing, a
             feature
             that you need built or a project that needs coding. I’d love to help
@@ -400,11 +403,13 @@
           </p>
           <form class="form-container" action="https://formspree.io/f/xdoybyyj"
             method="post">
-            <input class="form-text" type="text" placeholder="Text Input"
-              name="user-input" required maxlength="30" />
-            <input class="form-email" type="email"
-              placeholder="jeremy@gmail.com"
-              name="user-email" required />
+            
+              <label for="user"><input class="form-text" type="text" placeholder="Text Input"
+                name="user-input" required maxlength="30" id="user"/></label>
+                <label for="email"><input class="form-email" id="email" type="email"
+                  placeholder="youremail@email.com"
+                  name="user-email" required /></label>
+            
             <textarea
               class="text-area-color" name="comment" id="user-comment" cols="30"
               rows="10" maxlength="500" placeholder="Enter text here" required>
@@ -454,7 +459,7 @@
                   Medium icon" /></a>
             </li>
           </ul>
-          <div class="final">emailhere@email.com</div>
+          <div class="final" id="link-4">emailhere@email.com</div>
         </footer>
       </body>
     </html>

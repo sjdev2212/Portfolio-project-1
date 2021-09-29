@@ -20,11 +20,18 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+.nav-div a {
+
+  color: #edecff;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+}
+
 .left {
   margin-bottom: 10rem;
   margin-top: 1.5rem;
   color: #edecff;
-  font-size: 19px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -40,7 +47,7 @@ html {
   align-content: center;
 }
 
-.envelope-icon {
+ .envelope-icon {
   width: 24px;
   height: 25px;
   margin-top: 30px;
@@ -123,7 +130,7 @@ html {
   .left {
     margin-bottom: 10rem;
     color: #edecff;
-    font-size: 16px;
+    font-size: 17px;
     font-family: "Roboto", sans-serif;
     margin-left: 75px;
     margin-top: 25px;
@@ -152,8 +159,9 @@ html {
 
   .envelope-icon {
     margin-right: 75px;
-    width: 30px;
+    width: 26px;
     margin-top: 25px;
+    height: 20px;
   }
 
   main h1 {
