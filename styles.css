@@ -12,6 +12,14 @@ html {
   justify-content: space-between;
 }
 
+a {
+  text-decoration: none;
+}
+
+footer a {
+  padding: 0 10px;
+}
+
 .nav-div {
   margin-bottom: 10rem;
   margin-top: 1.5rem;
@@ -20,11 +28,17 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+.nav-div a {
+  color: #edecff;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+}
+
 .left {
   margin-bottom: 10rem;
   margin-top: 1.5rem;
   color: #edecff;
-  font-size: 19px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -123,7 +137,7 @@ html {
   .left {
     margin-bottom: 10rem;
     color: #edecff;
-    font-size: 16px;
+    font-size: 17px;
     font-family: "Roboto", sans-serif;
     margin-left: 75px;
     margin-top: 25px;
@@ -152,8 +166,9 @@ html {
 
   .envelope-icon {
     margin-right: 75px;
-    width: 30px;
+    width: 26px;
     margin-top: 25px;
+    height: 20px;
   }
 
   main h1 {
@@ -356,14 +371,6 @@ h2 {
   margin-bottom: 1.2rem;
 }
 
-a {
-  text-decoration: none;
-}
-
-footer a {
-  padding: 0 10px;
-}
-
 footer ul {
   display: flex;
 }
@@ -447,8 +454,8 @@ p {
 
 .btn {
   align-self: flex-start;
-  background-color: #7d73fc;
-  color: #edecff;
+  background-color: #6a63ea;
+  color: #fff;
   padding: 12px;
   height: 68px;
   width: 120px;
@@ -463,7 +470,7 @@ p {
 }
 
 .btn:active {
-  background: #5e42d7;
+  background: #00b928;
 }
 
 .contact-section {
@@ -526,8 +533,8 @@ h5 {
 }
 
 .form-btn {
-  background-color: #7d73fc;
-  color: #edecff;
+  background-color: #6a63ea;
+  color: #fff;
   padding: 12px;
   margin-top: 50px;
   margin-bottom: 70px;
