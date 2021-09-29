@@ -454,8 +454,8 @@ p {
 
 .btn {
   align-self: flex-start;
-  background-color: #01000f;
-  color: #edecff;
+  background-color: #7d73dc;
+  color: hsl(156, 100%, 96%);
   padding: 12px;
   height: 68px;
   width: 120px;
@@ -533,8 +533,9 @@ h5 {
 }
 
 .form-btn {
-  background-color: orange;
-  color: #336;
+  background-color: #7d73dc;
+  color: hsl(156, 100%, 96%)
+  ;
   padding: 12px;
   margin-top: 50px;
   margin-bottom: 70px;
