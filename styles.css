@@ -12,6 +12,14 @@ html {
   justify-content: space-between;
 }
 
+a {
+  text-decoration: none;
+}
+
+footer a {
+  padding: 0 10px;
+}
+
 .nav-div {
   margin-bottom: 10rem;
   margin-top: 1.5rem;
@@ -21,7 +29,6 @@ html {
 }
 
 .nav-div a {
-
   color: #edecff;
   font-size: 17px;
   font-family: "Roboto", sans-serif;
@@ -47,7 +54,7 @@ html {
   align-content: center;
 }
 
- .envelope-icon {
+.envelope-icon {
   width: 24px;
   height: 25px;
   margin-top: 30px;
@@ -364,14 +371,6 @@ h2 {
   margin-bottom: 1.2rem;
 }
 
-a {
-  text-decoration: none;
-}
-
-footer a {
-  padding: 0 10px;
-}
-
 footer ul {
   display: flex;
 }
@@ -455,7 +454,7 @@ p {
 
 .btn {
   align-self: flex-start;
-  background-color: #7d73fc;
+  background-color: #01000f;
   color: #edecff;
   padding: 12px;
   height: 68px;
@@ -471,7 +470,7 @@ p {
 }
 
 .btn:active {
-  background: #5e42d7;
+  background: #00b928;
 }
 
 .contact-section {
@@ -534,8 +533,8 @@ h5 {
 }
 
 .form-btn {
-  background-color: #7d73fc;
-  color: #edecff;
+  background-color: orange;
+  color: #336;
   padding: 12px;
   margin-top: 50px;
   margin-bottom: 70px;
