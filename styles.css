@@ -23,6 +23,8 @@ padding:  30px;
 
 .close-btn {
   justify-self: end;
+  color: whitesmoke;
+  font-size: 30px;
   
 }
 
