@@ -13,12 +13,16 @@ right: 0;
 left: 0;
 background: #191765 url("assets/images/bg-mob-menu/bg-mob-menu.svg") no-repeat;
 background-size: cover;
-display: grid;
+display: none;
 grid-template-columns: 1fr;
 grid-template-rows: auto auto;
 align-items: start;
 align-content: start;
 padding:  30px;
+}
+
+.menu-open {
+  display: grid;
 }
 
 .close-btn {
