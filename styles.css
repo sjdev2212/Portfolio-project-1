@@ -11,13 +11,14 @@ top : 0;
 bottom : 0;
 right: 0;
 left: 0;
-background-color: aqua;
+background: #191765 url("assets/images/bg-mob-menu/bg-mob-menu.svg") no-repeat;
+background-size: cover;
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: auto auto;
-justify-items: start;
 align-items: start;
-padding:  10px;
+align-content: start;
+padding:  30px;
 }
 
 .close-btn {
@@ -35,13 +36,31 @@ padding:  10px;
   list-style: none;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+
 
 }
 
-.mobile-menu ul  >* {
+.mobile-menu ul li {
   display: flex;
-  
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 0;
 }
+
+.mobile-menu ul li a{
+  display: block;
+  color: #acb7C3;
+}
+
+.mobile-menu ul li h3 {
+  margin: 0;
+  padding: 0;
+}
+
+
 
 .a-color {
   color: #edecff
