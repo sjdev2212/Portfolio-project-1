@@ -5,10 +5,57 @@ html {
   background-color: #191765;
 }
 
+.mobile-menu {
+position: absolute;
+top : 0;
+bottom : 0;
+right: 0;
+left: 0;
+background-color: aqua;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto auto;
+justify-items: start;
+align-items: start;
+padding:  10px;
+}
+
+.close-btn {
+  justify-self: end;
+  
+}
+
+.mobile-menu li {
+  font-size: 31px;
+  font-weight: 500;
+  
+}
+
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.mobile-menu ul  >* {
+  display: flex;
+  
+}
+
+.a-color {
+  color: #edecff
+}
+
+.mob-a {
+  color :#ACB7C3;
+ font-size: 25px;
+}
+
 .menu {
   display: flex;
   height: 72px;
-  padding: 0 24px;
+  padding: 0 10px;
   justify-content: space-between;
 }
 
@@ -45,6 +92,7 @@ footer a {
 .icon {
   color: #acb7c3;
   width: 45px;
+  padding-left: 180px;
 }
 
 .content {
