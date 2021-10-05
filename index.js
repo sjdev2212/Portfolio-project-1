@@ -61,15 +61,20 @@ function creatPopUp(name, description, img, techs, live, source) {
     btnLive.textContent = live;
     btnSrc.textContent = source;
 
-    wrapper.setAttribute('style', 'position:fixed; top:0; bottom: 0; left:0; right:0; display: flex; justify-content: center; align-items: center; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(8px);');
-    contentContainer.setAttribute('style','width:90%; height: 90%; background:rgba(255, 255, 255, 0.3); padding: 10px; display:grid ; grid-template-columns: 1fr;grid-template-rows: auto 1fr 1fr auto auto auto; overflow: auto;');
-    image.style.width = "100%";
-    image.style.height = '100%';
+    wrapper.setAttribute('style', 'position:fixed; top:0; bottom: 0; left:0; right:0; display: flex; justify-content: center; align-items: center; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px);');
+    contentContainer.setAttribute('style','width:80%; height: 80%; border: 1px solid #fff; background:rgba(255, 255, 255, 0.3); padding: 10px; display:grid ; grid-template-columns: 1fr;grid-template-rows: auto 1fr 1fr auto auto auto; gird-gap: 20px; overflow: auto;');
     headerContainer.setAttribute('style','display: flex;justify-content: space-between;align-items: center;padding: 25px 0;')
     header.setAttribute('style','padding: 0 ; margin: 0;');
     paragraph.setAttribute('style','font-size:16px; text-align:center;');
-    tags.setAttribute('style','display:flex; justify-content: space-between;');
-    anchor1.setAttribute('style','padding: 10px; color:white; text-decoration:none;')
+    tags.setAttribute('style','display:flex; justify-content: center;');
+    anchor1.setAttribute('style','padding: 10px; color:white; text-decoration:none; border-left: 1px solid #fff;')
+    anchor2.setAttribute('style','padding: 10px; color:white; text-decoration:none; border-left: 1px solid #fff;')
+    anchor3.setAttribute('style','padding: 10px; color:white; text-decoration:none; border-left: 1px solid #fff;  border-right: 1px solid #fff;')
+    closeBtn.style.color = "#fff";
+    closeBtn.style.fontSize = "20px";
+    btnLive.setAttribute('style', 'padding: 12px; background: #7D73FC url(assets/images/popup-icons/Export.svg) 90% 50% no-repeat; padding-right: 40px; justify-self: center; color: #fff; border: none; margin-top: 20px');
+    btnSrc.setAttribute('style', 'padding: 12px; background: #7D73FC url(assets/images/popup-icons/GitHub.svg) 90% 50% no-repeat; padding-right: 40px; justify-self: center; color: #fff; border: none; margin-top: 20px');
+    image.setAttribute('style', 'justify-self: center');
 
 
     body.appendChild(wrapper);
@@ -97,10 +102,10 @@ function creatPopUp(name, description, img, techs, live, source) {
 const project1 = new Project (
     'Prof art project', 
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.", 
-    'assets/images/easylo-colorlib-template.jpg.webp', 
-    ['JS', 'Ruby', 'HTML'],
-    'live',
-    'source');
+    'assets/images/pop-images/Snapshoot Portfolio.svg', 
+    ['html', 'Ruby on rails', 'css'],
+    'See Live',
+    'See Source');
 
 seeMoreBtn.addEventListener('click', ()=> creatPopUp(project1.name, project1.description, project1.img, project1.techs, project1.live, project1.source))
 
