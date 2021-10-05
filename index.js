@@ -37,6 +37,7 @@ function creatPopUp(name, description, img, techs, live, source) {
 
     const wrapper = document.createElement('div');
     const contentContainer = document.createElement('div');
+    const headerContainer = document.createElement('div')
     const header = document.createElement('h2');
     header.textContent = name;
     const closeBtn = document.createElement('a');
@@ -61,14 +62,21 @@ function creatPopUp(name, description, img, techs, live, source) {
     btnSrc.textContent = source;
 
     wrapper.setAttribute('style', 'position:fixed; top:0; bottom: 0; left:0; right:0; display: flex; justify-content: center; align-items: center; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(8px);');
-    contentContainer.setAttribute('style','width:90%; height: 90%; background:rgba(255, 255, 255, 0.3); padding: 10px; display:grid ; grid-template-columns: 1fr;grid-template-rows: auto 1fr 1fr auto auto auto;');
+    contentContainer.setAttribute('style','width:90%; height: 90%; background:rgba(255, 255, 255, 0.3); padding: 10px; display:grid ; grid-template-columns: 1fr;grid-template-rows: auto 1fr 1fr auto auto auto; overflow: auto;');
     image.style.width = "100%";
     image.style.height = '100%';
+    headerContainer.setAttribute('style','display: flex;justify-content: space-between;align-items: center;padding: 25px 0;')
+    header.setAttribute('style','padding: 0 ; margin: 0;');
+    paragraph.setAttribute('style','font-size:16px; text-align:center;');
+    tags.setAttribute('style','display:flex; justify-content: space-between;');
+    anchor1.setAttribute('style','padding: 10px; color:white; text-decoration:none;')
+
 
     body.appendChild(wrapper);
     wrapper.appendChild(contentContainer);
-    contentContainer.appendChild(closeBtn);
-    contentContainer.appendChild(header);
+    contentContainer.appendChild(headerContainer);
+    headerContainer.appendChild(header);
+    headerContainer.appendChild(closeBtn);
     contentContainer.appendChild(image);
     contentContainer.appendChild(paragraph);
     contentContainer.appendChild(tags);
@@ -77,7 +85,9 @@ function creatPopUp(name, description, img, techs, live, source) {
     tags.appendChild(anchor3);
     contentContainer.appendChild(btnLive);
     contentContainer.appendChild(btnSrc);
-
+    
+   
+   
     closeBtn.addEventListener('click', ()=> {
         wrapper.style.display = 'none';
     })
