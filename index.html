@@ -24,6 +24,7 @@
 
       gtag("config", "G-TC8TX9RLJX");
     </script>
+    <script src="index.js" defer></script>
     <title>Anibal Amoroso's Portfolio</title>
   </head>
 
@@ -37,6 +38,7 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon"
+          id="open-menu-btn"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -56,8 +58,22 @@
         /></a>
       </nav>
     </header>
+    <section class="mobile-menu">
+      <a href="#" class="close-btn" id="close-menu-btn">X</a>
+      <ul class="a-color">
+        <li>
+          <a href="#profile" class="listBtns" > <h3>Portfolio</h3></a>
+        </li>
+        <li>
+          <a href="#about" class="listBtns"><h3>About</h3></a>
+        </li>
+        <li>
+          <a href="#contact" class="listBtns"> <h3>Contact</h3></a>
+        </li>
+      </ul>
+    </section>
     <main class="content">
-      <section>
+      <section id="about">
         <h1>Anibal Amoroso</h1>
         <img
           class="circle-left"
@@ -156,7 +172,7 @@
       </div>
     </footer>
 
-    <section class="small-version">
+    <section class="small-version" id="profile">
       <h2 class="title-desk">My recent work</h2>
       <section class="work-sect work-desk">
         <div class="card1">
@@ -363,7 +379,7 @@
         </div>
       </section>
     </section>
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <h4>Let's chat!</h4>
       <p class="contact-text" id="link-3">
         If you have an application you are interested in developing, a feature
