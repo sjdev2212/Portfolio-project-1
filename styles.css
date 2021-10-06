@@ -170,6 +170,52 @@ footer a {
   padding-right: 25px;
 }
 
+.small-version {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 50px;
+}
+
+.small-version .card-image {
+  max-width: 700px;
+  width: 100%;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  justify-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+.card .card-title {
+  color: #fff;
+}
+
+.card .card-list {
+  justify-self: start;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.card-list li {
+  padding: 10px 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.542);
+}
+
+.card .card-btn {
+  justify-self: start;
+  background: #7D73FC;
+  color: white;
+  border: none;
+  padding: 20px;
+}
+
 /* mediaquery Mobile */
 
 @media screen and (max-width: 1100px) {

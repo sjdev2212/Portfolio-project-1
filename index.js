@@ -27,21 +27,35 @@ const projectList = [
         }
 ]
 const workSection = document.getElementById('profile');
+const descWorkSection = document.querySelector('.big-version');
 
 for (let i = 0; i < projectList.length; i++) {
-workSection.innerHTML = `<div class="card">
-<img class"card-image" src=${projectList[i].image}>
+workSection.innerHTML += `<div class="card">
+<img class="card-image" src=${projectList[i].image}>
 <h1 class="card-title">${projectList[i].name}</h1>
-<p class="description>${projectList[i].description}</p>
-<ul class="list>
+<p class="description">${projectList[i].description}</p>
+<ul class="card-list">
 <li>${projectList[i].techs[0]}</li>
 <li>${projectList[i].techs[1]}</li>
 <li>${projectList[i].techs[2]}</li>
 </ul>
 <button class="card-btn" type="button">${projectList[i].button}</button>
 </div> `
-
 }
+
+for (let i = 0; i < projectList.length; i++) {
+    descWorkSection.innerHTML += `<div class="card">
+    <img class="card-image" src=${projectList[i].image}>
+    <h1 class="card-title">${projectList[i].name}</h1>
+    <p class="description">${projectList[i].description}</p>
+    <ul class="card-list">
+    <li>${projectList[i].techs[0]}</li>
+    <li>${projectList[i].techs[1]}</li>
+    <li>${projectList[i].techs[2]}</li>
+    </ul>
+    <button class="card-btn" type="button">${projectList[i].button}</button>
+    </div> `
+    }
 
 
 
