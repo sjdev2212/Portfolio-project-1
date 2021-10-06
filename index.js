@@ -28,12 +28,16 @@ function creatPopUp(
   const anchor1 = document.createElement("a");
   const anchor2 = document.createElement("a");
   const anchor3 = document.createElement("a");
+  const anchor4 = document.createElement("a");
   anchor1.textContent = techs[0];
   anchor2.textContent = techs[1];
   anchor3.textContent = techs[2];
+  anchor4.textContent = techs[3];
   anchor1.href = "#";
   anchor2.href = "#";
   anchor3.href = "#";
+  anchor4.href = "#";
+  const btns = document.createElement("div");
   const btnLive = document.createElement("button");
   const btnSrc = document.createElement("button");
   btnLive.textContent = live;
@@ -45,7 +49,7 @@ function creatPopUp(
   );
   contentContainer.setAttribute(
     "style",
-    "width:80%; height: 80%; border: 1px solid #fff; background:rgba(255, 255, 255, 0.3); padding: 10px; display:grid ; grid-template-columns: 1fr;grid-template-rows: auto 1fr 1fr auto auto auto; gird-gap: 20px; overflow: auto;"
+    "width:65%; height: 90%; border: 1px solid #fff; background:rgba(255, 255, 255, 0.3); padding: 10px; display:grid ; grid-template-columns: 1fr;grid-template-rows: auto 1fr 1fr auto auto auto; gird-gap: 20px; overflow: auto;"
   );
   headerContainer.setAttribute(
     "style",
@@ -64,22 +68,30 @@ function creatPopUp(
   );
   anchor3.setAttribute(
     "style",
+    "padding: 10px; color:white; text-decoration:none; border-left: 1px solid #fff;"
+  );
+  anchor4.setAttribute(
+    "style",
     "padding: 10px; color:white; text-decoration:none; border-left: 1px solid #fff;  border-right: 1px solid #fff;"
   );
   closeBtn.style.color = "#fff";
   closeBtn.style.fontSize = "20px";
   btnLive.setAttribute(
     "style",
-    "padding: 12px; background: #7D73FC url(assets/images/popup-icons/Export.svg) 90% 50% no-repeat; padding-right: 40px; justify-self: center; color: #fff; border: none; margin-top: 20px"
+    "padding: 12px;  margin-right: 60px;background: #7D73FC url(assets/images/popup-icons/Export.svg) 93% 50% no-repeat;width:85px; text-align: start;font-size: 12px; color: #fff; border: none; margin-top: 20px"
   );
   btnSrc.setAttribute(
     "style",
-    "padding: 12px; background: #7D73FC url(assets/images/popup-icons/GitHub.svg) 90% 50% no-repeat; padding-right: 40px; justify-self: center; color: #fff; border: none; margin-top: 20px"
+    "padding: 12px; background: #7D73FC url(assets/images/popup-icons/GitHub.svg) 93% 50% no-repeat;text-align: start; width:108px;font-size: 12px; color: #fff;  border: none; margin-top: 20px"
   );
   image.setAttribute(
     "style",
     "justify-self: center max-width: 700px; width: 100%"
   );
+  contentContainer.classList.add("popup-container");
+  btns.setAttribute("style", "display: flex; justify-content: center");
+  btns.classList.add("small-btns");
+  btnLive.classList.add("small-margin");
 
   body.appendChild(wrapper);
   wrapper.appendChild(contentContainer);
@@ -92,8 +104,10 @@ function creatPopUp(
   tags.appendChild(anchor1);
   tags.appendChild(anchor2);
   tags.appendChild(anchor3);
-  contentContainer.appendChild(btnLive);
-  contentContainer.appendChild(btnSrc);
+  tags.appendChild(anchor4);
+  contentContainer.appendChild(btns);
+  btns.appendChild(btnLive);
+  btns.appendChild(btnSrc);
 
   closeBtn.addEventListener("click", () => {
     wrapper.style.display = "none";
@@ -106,7 +120,7 @@ const projectList = [
     image: "assets/images/easylo-colorlib-template.jpg.webp",
     description:
       "A daily selection of privately personalized reads; no accounts o sign-ups required. has been the industrys standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.",
-    techs: ["Html", "Bootstrap", "Ruby"],
+    techs: ["Html", "Bootstrap", "Ruby", "Github"],
     button: "See the Project",
   },
   {
@@ -114,7 +128,7 @@ const projectList = [
     image: "assets/images/port-3.png",
     description:
       "A daily selection of privately personalized reads; no accounts o sign-ups required. has been the industrys standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.",
-    techs: ["Html", "Bootstrap", "Ruby"],
+    techs: ["Html", "Bootstrap", "Ruby", "Github"],
     button: "See the Project",
   },
   {
@@ -122,7 +136,7 @@ const projectList = [
     image: "assets/images/foto--2webp.webp",
     description:
       "A daily selection of privately personalized reads; no accounts o sign-ups required. has been the industrys standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.",
-    techs: ["Html", "Bootstrap", "Ruby"],
+    techs: ["Html", "Bootstrap", "Ruby", "Javascript"],
     button: "See the Project",
   },
   {
@@ -130,7 +144,7 @@ const projectList = [
     image: "assets/images/snap-4.png",
     description:
       "A daily selection of privately personalized reads; no accounts o sign-ups required. has been the industrys standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.",
-    techs: ["Html", "Bootstrap", "Ruby"],
+    techs: ["Html", "Bootstrap", "Ruby", "Python"],
     button: "See the Project",
   },
 ];
@@ -181,11 +195,7 @@ ${projectList[0].button}
 </div> `;
 
 deskWorkSection1.innerHTML = `<div class="card">
-    
-    
-    
-   
-   <div class="card-content card-left">
+    <div class="card-content card-left">
     <h1 class="card-title">${projectList[1].name}</h1>
     <p class="description">${projectList[1].description}</p>
     <ul class="card-list">
@@ -209,29 +219,24 @@ deskWorkSection2.innerHTML = `<div class="card">
     <div >
     <img class="card-image" src=${projectList[2].image}>
    </div>
-    
     <div class="card-content>
     <h1 class="card-title">${projectList[2].name}</h1>
     <p class="description">${projectList[1].description}</p>
     <ul class="card-list">
-    <li>${projectList[2].techs[0]}</li>
-    <li>${projectList[2].techs[1]}</li>
-    <li>${projectList[2].techs[2]}</li>
+    <li>${projectList[1].techs[0]}</li>
+    <li>${projectList[1].techs[1]}</li>
+    <li>${projectList[1].techs[2]}</li>
     </ul>
     <button 
     class="card-btn"
     id = "d${2}"
     type="button">
-    ${projectList[2].button}
+    ${projectList[1].button}
 </button>
 </div>
 
     </div> `;
 deskWorkSection3.innerHTML = `<div class="card">
-    
-    
-    
-   
     <div class="card-content card-left">
      <h1 class="card-title">${projectList[1].name}</h1>
      <p class="description">${projectList[1].description}</p>
@@ -244,7 +249,7 @@ deskWorkSection3.innerHTML = `<div class="card">
      class="card-btn"
      id = "d${3}"
      type="button">
-     ${projectList[3].button}
+     ${projectList[1].button}
  </button>
  </div>
  <div >
