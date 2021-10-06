@@ -1,3 +1,50 @@
+const projectList = [
+    {
+        name:'Multi-Post Stories',
+        image :'assets/images/easylo-colorlib-template.jpg.webp',
+        description: 'A daily selection of privately personalized reads; no accounts o sign-ups required. has been the industrys standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.',
+        techs: ['Html','Bootstrap','Ruby'],
+        button: 'See the Project'},
+        {
+            name:'Multi-Post Stories',
+        image :'assets/images/port-3.png',
+        description: 'A daily selection of privately personalized reads; no accounts o sign-ups required. has been the industrys standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.',
+        techs: ['Html','Bootstrap','Ruby'],
+        button: 'See the Project'
+
+        },{
+            name:'Multi-Post Stories',
+        image :'assets/images/foto--2webp.webp',
+        description: 'A daily selection of privately personalized reads; no accounts o sign-ups required. has been the industrys standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.',
+        techs: ['Html','Bootstrap','Ruby'],
+        button: 'See the Project'
+        },{
+            name:'Multi-Post Stories',
+        image :'assets/images/snap-4.png',
+        description: 'A daily selection of privately personalized reads; no accounts o sign-ups required. has been the industrys standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.',
+        techs: ['Html','Bootstrap','Ruby'],
+        button: 'See the Project'
+        }
+]
+const workSection = document.getElementById('profile');
+
+for (let i = 0; i < projectList.length; i++) {
+workSection.innerHTML = `<div class="card">
+<img class"card-image" src=${projectList[i].image}>
+<h1 class="card-title">${projectList[i].name}</h1>
+<p class="description>${projectList[i].description}</p>
+<ul class="list>
+<li>${projectList[i].techs[0]}</li>
+<li>${projectList[i].techs[1]}</li>
+<li>${projectList[i].techs[2]}</li>
+</ul>
+<button class="card-btn" type="button">${projectList[i].button}</button>
+</div> `
+
+}
+
+
+
 const openBtn = document.querySelector('#open-menu-btn');
 const closeBtn = document.querySelector('#close-menu-btn');
 const menu = document.querySelector('.mobile-menu');
@@ -98,14 +145,4 @@ function creatPopUp(name, description, img, techs, live, source) {
     })
 
 }
-
-const project1 = new Project (
-    'Prof art project', 
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.", 
-    'assets/images/pop-images/Snapshoot Portfolio.svg', 
-    ['html', 'Ruby on rails', 'css'],
-    'See Live',
-    'See Source');
-
-seeMoreBtn.addEventListener('click', ()=> creatPopUp(project1.name, project1.description, project1.img, project1.techs, project1.live, project1.source))
 
