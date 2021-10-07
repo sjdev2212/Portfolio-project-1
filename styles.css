@@ -515,23 +515,9 @@ footer a {
     width: 560px;
   }
 
-  .contact-section .action {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .action .alerMessage {
-    color: red;
-    font-weight: bold;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    display: none;
-  }
-
   .contact-section .form-btn {
-    /* margin-bottom: 400px;
-    margin-top: 200px; */
+    margin-bottom: 400px;
+    margin-top: 200px;
     width: 160px;
   }
 
@@ -723,8 +709,8 @@ h5 {
   background-color: #6a63ea;
   color: #fff;
   padding: 12px;
-  /* margin-top: 50px;
-  margin-bottom: 70px; */
+  margin-top: 50px;
+  margin-bottom: 70px;
   height: 68px;
   width: 120px;
   font-size: 15px;
@@ -763,4 +749,12 @@ h5 {
 
 .skills-link:hover {
   color: yellow;
+}
+
+.error-message {
+  color : yellow;
+  font-size: 25px;
+  font-weight: bold;
+  font-family:"Roboto", sans-serif; 
+  margin-top: 12px;
 }
