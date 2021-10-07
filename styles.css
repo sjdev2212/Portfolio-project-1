@@ -516,8 +516,8 @@ footer a {
   }
 
   .contact-section .form-btn {
-    margin-bottom: 400px;
-    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-top: 15px;
     width: 160px;
   }
 
@@ -756,5 +756,5 @@ h5 {
   font-size: 25px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  margin-top: 12px;
+  margin-top: 20px;
 }
