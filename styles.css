@@ -752,9 +752,9 @@ h5 {
 }
 
 .error-message {
-  color : yellow;
+  color: yellow;
   font-size: 25px;
   font-weight: bold;
-  font-family:"Roboto", sans-serif; 
+  font-family: "Roboto", sans-serif;
   margin-top: 12px;
 }

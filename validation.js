@@ -1,14 +1,12 @@
-const name = document.getElementById('name');
 const email = document.getElementById('email');
 const form = document.getElementById('form');
-const error = document.getElementById('error')
+const error = document.getElementById('error');
 
-form.addEventListener('submit', (x)=> {
-    let errorMessage = [];
-    if (email.value !== email.value.toLowerCase()){
-        errorMessage.push('E-mail should be in lowercase')
-        x.preventDefault();
-error.innerText = errorMessage;
-    }
-
-})
+form.addEventListener('submit', (x) => {
+  const errorMessage = [];
+  if (email.value !== email.value.toLowerCase()) {
+    errorMessage.push('E-mail should be in lowercase');
+    x.preventDefault();
+    error.innerText = errorMessage;
+  }
+});
