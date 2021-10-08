@@ -28,10 +28,6 @@ function creatPopUp(
   const anchor2 = document.createElement('a');
   const anchor3 = document.createElement('a');
   const anchor4 = document.createElement('a');
-  // anchor1.textContent = techs[0];
-  // anchor2.textContent = techs[1];
-  // anchor3.textContent = techs[2];
-  // anchor4.textContent = techs[3];
   [anchor1.textContent, anchor2.textContent, anchor3.textContent, anchor4.textContent] = techs;
   anchor1.href = '#';
   anchor2.href = '#';
