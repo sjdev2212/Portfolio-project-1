@@ -1,18 +1,25 @@
-const sEmail = document.getElementById('email')
-const user = document.getElementById('user');
-const textArea = document.getElementById('user-comment');
-const formStorage = document.querySelector('.store')
+const storedInfo = form.querySelectorAll('#user, #email, #user-comment');
 
-function storeUserData (e) {
-    e.preventDefault();
-    let user = {
-        userName : user.value,
-        userEmail : sEmail.value,
-        userText : textArea.value
-    }
-    formStorage.submit();
-    localStorage.setItem('user',JSON.stringify(user))
-
+function setInputs() {
+  localStorage.setItem("name", storedInfo[0].value);
+  localStorage.setItem("email", storedInfo[1].value);
+  localStorage.setItem("text", storedInfo[2].value);
 }
-formStorage.addEventListener('submit' ,storeUserData);
+
+for (let i = 0; i < storedInfo.length; i++) {
+  storedInfo[i].addEventListener("focusout", setInputs);
+}
+
+if (localStorage.getItem("name")) {
+  storedInfo[0].setAttribute("value", localStorage.getItem("name"));
+}
+
+if (localStorage.getItem("email")) {
+  storedInfo[1].setAttribute("value", localStorage.getItem("email"));
+}
+if (localStorage.getItem("text")) {
+  storedInfo[2].setAttribute("value", localStorage.getItem("text"));
+}
+
+
 
