@@ -13,7 +13,7 @@ Html Webpage with a title
 
 - HTML
 - CSS
-- npm package
+- Javascript
 
 ## Live Demo
 
@@ -32,7 +32,7 @@ Open index.html in a web browser
 
 👤 **Anibal Amoroso**
 
-- GitHub: [@githubhandle](https://github.com/sj1978)
+- GitHub: (https://github.com/sj1978)
 
 
 
@@ -41,7 +41,7 @@ Open index.html in a web browser
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/sj1978/Portfolio-project-1/issues).
 
 ## Show your support
 

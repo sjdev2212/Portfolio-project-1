@@ -39,15 +39,8 @@ footer a {
   color: #f5f5ff;
 }
 
-.text-w a {
-  color: honeydew;
-  margin: 0 auto;
-}
 
-.text-w2 a {
-  color: honeydew;
-  margin: 0 auto;
-}
+
 
 .grid-container li {
   padding: 6px 16px;
@@ -173,6 +166,17 @@ footer a {
 /* mediaquery Mobile */
 
 @media screen and (max-width: 1100px) {
+  .text-w {
+    display: flex;
+    justify-items: center;
+  }
+  .text-w a {
+    color: whitesmoke;
+    margin-top : -10px;
+    margin-left: 95px;
+    
+  }
+  
   .small-btns {
     display: flex;
     flex-direction: column;
@@ -304,6 +308,17 @@ footer a {
 }
 
 @media screen and (min-width: 1100px) {
+  .icons-list {
+margin-top: 25px;
+margin-left: -36px;
+  }
+
+  .text-w2 a {
+    color: honeydew;
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+
   .card {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -415,7 +430,7 @@ footer a {
     display: flex;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
-    align-items: center;
+   
     justify-content: center;
     margin: 0 380px;
   }
