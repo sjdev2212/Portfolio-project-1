@@ -9,8 +9,8 @@ function creatPopUp(
   description,
   img,
   techs,
-  live = 'SeeLive',
-  source = 'SeeSource',
+  github,
+  website
 ) {
   const wrapper = document.createElement('div');
   const contentContainer = document.createElement('div');
@@ -34,10 +34,14 @@ function creatPopUp(
   anchor3.href = '#';
   anchor4.href = '#';
   const btns = document.createElement('div');
-  const btnLive = document.createElement('button');
-  const btnSrc = document.createElement('button');
-  btnLive.textContent = live;
-  btnSrc.textContent = source;
+  const btnLive = document.createElement('a');
+  const btnSrc = document.createElement('a');
+  btnLive.textContent = 'live';
+  btnSrc.textContent = 'source';
+  btnLive.href = website;
+  btnLive.target = '_blank';
+  btnSrc.href = github;
+  btnSrc.target = '_blank';
 
   wrapper.setAttribute(
     'style',
@@ -112,20 +116,24 @@ function creatPopUp(
 
 const projectList = [
   {
-    name: 'Multi-Post Stories',
-    image: 'assets/images/easylo-colorlib-template.jpg.webp',
+    name: 'Expense Tracker',
+    image: 'assets/images/budget.png',
     description:
-      'A daily selection of privately personalized reads; no accounts o sign-ups required. has been the industrys standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.',
-    techs: ['Html', 'Bootstrap', 'Ruby', 'Github'],
+      'Expense tracker is an application where the user creates an account and can keep track of their expenses. It is a mobile app. Created with Ruby on Rails.',
+    techs: ['Ruby', 'Ruby on Rails', 'Bootstrap','PostgreSQL'],
     button: 'See the Project',
+    github: 'https://github.com/sj1978/budget-app.git',
+    website: 'https://budget-app.herokuapp.com/'
   },
   {
-    name: 'Multi-Post Stories',
-    image: 'assets/images/port-3.png',
+    name: 'Covid in South America',
+    image: 'assets/images/covid.png',
     description:
-      'A daily selection of privately personalized reads; no accounts o sign-ups required. has been the industrys standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.',
-    techs: ['Html', 'Bootstrap', 'Ruby', 'Github'],
+      'This is an application that gives the numbers for covid in South America. The user chooses a country and the app retrieves the information from an external API. Created with React Redux',
+    techs: ['React', 'Css', 'Redux', 'Axios'],
     button: 'See the Project',
+    github: 'https://github.com/sj1978/react-redux-capstone.git ',
+    website: 'https://react-redux-capstone-sj1978.herokuapp.com/'
   },
   {
     name: 'Multi-Post Stories',
@@ -268,30 +276,41 @@ seeMoreBtn0.addEventListener('click', () => creatPopUp(
   projectList[0].description,
   projectList[0].image,
   projectList[0].techs,
+  projectList[0].github,
+  projectList[0].website,
+
 ));
 seeMoreBtnd0.addEventListener('click', () => creatPopUp(
   projectList[0].name,
   projectList[0].description,
   projectList[0].image,
   projectList[0].techs,
+  projectList[0].github,
+  projectList[0].website,
 ));
 seeMoreBtnd1.addEventListener('click', () => creatPopUp(
   projectList[1].name,
   projectList[1].description,
   projectList[1].image,
   projectList[1].techs,
+  projectList[1].github,
+  projectList[1].website,
 ));
 seeMoreBtnd2.addEventListener('click', () => creatPopUp(
   projectList[2].name,
   projectList[2].description,
   projectList[2].image,
   projectList[2].techs,
+  projectList[2].github,
+  projectList[2].website,
 ));
 seeMoreBtnd3.addEventListener('click', () => creatPopUp(
   projectList[3].name,
   projectList[3].description,
   projectList[3].image,
   projectList[3].techs,
+  projectList[3].github,
+  projectList[3].website,
 ));
 
 seeMoreBtn1.addEventListener('click', () => creatPopUp(
@@ -299,6 +318,8 @@ seeMoreBtn1.addEventListener('click', () => creatPopUp(
   projectList[1].description,
   projectList[1].image,
   projectList[1].techs,
+  projectList[1].github,
+  projectList[1].website,
 ));
 
 seeMoreBtn2.addEventListener('click', () => creatPopUp(
@@ -306,6 +327,8 @@ seeMoreBtn2.addEventListener('click', () => creatPopUp(
   projectList[2].description,
   projectList[2].image,
   projectList[2].techs,
+  projectList[2].github,
+  projectList[2].website,
 ));
 
 seeMoreBtn3.addEventListener('click', () => creatPopUp(
@@ -313,6 +336,8 @@ seeMoreBtn3.addEventListener('click', () => creatPopUp(
   projectList[3].description,
   projectList[3].image,
   projectList[3].techs,
+  projectList[3].github,
+  projectList[3].website,
 ));
 
 function createClass(elem, className) {
