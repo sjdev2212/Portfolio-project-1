@@ -78,11 +78,11 @@ function creatPopUp(
   closeBtn.style.fontSize = '20px';
   btnLive.setAttribute(
     'style',
-    'padding: 12px;  margin-right: 60px;background: #7D73FC url(assets/images/popup-icons/Export.svg) 93% 50% no-repeat;width:85px; text-align: start;font-size: 12px; color: #fff; border: none; margin-top: 20px',
+    'padding: 13px;  margin-right: 60px;background: #7D73FC url(assets/images/popup-icons/Export.svg) 93% 50% no-repeat;width:85px; text-align: start;font-size: 12px; color: #fff; border: none; margin-top: 20px ;width: 100px',
   );
   btnSrc.setAttribute(
     'style',
-    'padding: 12px; background: #7D73FC url(assets/images/popup-icons/GitHub.svg) 93% 50% no-repeat;text-align: start; width:108px;font-size: 12px; color: #fff;  border: none; margin-top: 20px',
+    'padding: 13px; background: #7D73FC url(assets/images/popup-icons/GitHub.svg) 93% 50% no-repeat;text-align: start; width:108px;font-size: 12px; color: #fff;  border: none; margin-top: 20px ;width: 100px;',
   );
   image.setAttribute(
     'style',
@@ -150,7 +150,7 @@ const projectList = [
     name: 'Us Ozone levels',
     image: 'assets/images/ozone.png',
     description:
-      'In this application the user can enter zip code and the app will retrieve the ozone level from the AIRNOW API.Created with React and Ruby on Rails.',
+      'In this application the user can enter zip code and the app will retrieve the ozone level from the AIRNOW API.Created with Ruby on Rails.',
     techs: ['Html', 'Bootstrap','Ruby on Rails', 'Axios'],
     button: 'See the Project',
     github: 'https://github.com/sj1978/ozone-rails-app.git',
