@@ -136,12 +136,15 @@ const projectList = [
     website: 'https://react-redux-capstone-sj1978.herokuapp.com/'
   },
   {
-    name: 'Multi-Post Stories',
-    image: 'assets/images/foto--2webp.webp',
+    name: 'Reservify',
+    image: 'assets/images/reservify.png',
     description:
-      'A daily selection of privately personalized reads; no accounts o sign-ups required. has been the industrys standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.',
-    techs: ['Html', 'Bootstrap', 'Ruby', 'Javascript'],
+      'In this application the user can create an account and login to reserve a room in an hotel from a list of several countries.Created with React and Ruby on Rails.',
+    techs: ['React-Redux', 'Bootstrap', 'Ruby on Rails', 'Axios'],
     button: 'See the Project',
+    github: 'https://github.com/Yothu/reservify-back-end.git',
+    website: 'https://reservify.netlify.app/'
+
   },
   {
     name: 'Multi-Post Stories',
