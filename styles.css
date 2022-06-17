@@ -170,11 +170,12 @@ footer a {
     display: flex;
     justify-items: center;
   }
+
   .text-w a {
-    color: whitesmoke;
+    /* color: whitesmoke;
     margin-top : -10px;
-    margin-left: 95px;
-    
+    margin-left: 95px; */
+    display: none;
   }
   
   .small-btns {

@@ -147,13 +147,17 @@ const projectList = [
 
   },
   {
-    name: 'Multi-Post Stories',
-    image: 'assets/images/snap-4.png',
+    name: 'Us Ozone levels',
+    image: 'assets/images/ozone.png',
     description:
-      'A daily selection of privately personalized reads; no accounts o sign-ups required. has been the industrys standard dummy text eversince the 1500s, when an unknown printer took a standard dummy text.',
-    techs: ['Html', 'Bootstrap', 'Ruby', 'Python'],
+      'In this application the user can enter zip code and the app will retrieve the ozone level from the AIRNOW API.Created with React and Ruby on Rails.',
+    techs: ['Html', 'Bootstrap','Ruby on Rails', 'Axios'],
     button: 'See the Project',
+    github: 'https://github.com/sj1978/ozone-rails-app.git',
+    website: 'https://airozonequality.herokuapp.com/'
+
   },
+  
 ];
 const workSection = document.getElementById('profile');
 const deskWorkSection = document.querySelector('.big-version');
@@ -228,11 +232,11 @@ deskWorkSection2.innerHTML = `<div class="card">
    </div>
     <div class="card-content>
     <h1 class="card-title">${projectList[2].name}</h1>
-    <p class="description">${projectList[1].description}</p>
+    <p class="description">${projectList[2].description}</p>
     <ul class="card-list">
-    <li>${projectList[1].techs[0]}</li>
-    <li>${projectList[1].techs[1]}</li>
-    <li>${projectList[1].techs[2]}</li>
+    <li>${projectList[2].techs[0]}</li>
+    <li>${projectList[2].techs[1]}</li>
+    <li>${projectList[2].techs[2]}</li>
     </ul>
     <button 
     class="card-btn"
@@ -245,12 +249,12 @@ deskWorkSection2.innerHTML = `<div class="card">
     </div> `;
 deskWorkSection3.innerHTML = `<div class="card">
     <div class="card-content card-left">
-     <h1 class="card-title">${projectList[1].name}</h1>
-     <p class="description">${projectList[1].description}</p>
+     <h1 class="card-title">${projectList[3].name}</h1>
+     <p class="description">${projectList[3].description}</p>
      <ul class="card-list">
-     <li>${projectList[1].techs[0]}</li>
-     <li>${projectList[1].techs[1]}</li>
-     <li>${projectList[1].techs[2]}</li>
+     <li>${projectList[3].techs[0]}</li>
+     <li>${projectList[3].techs[1]}</li>
+     <li>${projectList[3].techs[2]}</li>
      </ul>
      <button 
      class="card-btn"
